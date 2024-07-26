@@ -1,0 +1,160 @@
+.header {
+    width: 100%;
+}
+
+.header-block {
+    display: flex;
+    align-items: center;
+    background-color: #f4f6f5;
+    border-radius: 59px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 40px 0px;
+   
+    padding: 20px 50px 0px 50px;
+    height: auto;
+}
+
+.header-image {
+    position: relative;
+    
+}
+
+.header-image img {
+    max-width: 100%;
+    animation: girl 2s infinite;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 600px;
+    margin-right: 50px;
+}
+
+
+.header-text h3 {
+    margin: 0px;
+    font-size: 96px;
+    font-weight: 900;
+    line-height: 120px;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.header-text p {
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: -1.6px;
+    margin: 20px 0px 25px 0px;
+}
+
+.hashlink {
+    text-decoration: none;
+    margin: 20px 0px;
+    background-color: #000;
+    border-radius: 7px;
+    color: #fefefe;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+    padding: 19px 40px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.hashlink:hover {
+    background-color: #a3a2a2;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+
+@media (max-width: 1500px) {
+    .header-text {
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+    
+    .header-text h3 {
+        font-size: 72px;
+        line-height: 100px;
+    }
+}
+
+
+
+@media (max-width: 1350px) {
+    .header-text h3 {
+        font-size: 64px;
+        line-height: 90px;
+    }
+}
+
+@media (max-width: 1260px) {
+    .header-text p {
+        display: none;
+    }
+
+    .header-text h3 {
+        font-size: 60px;
+        line-height: 80px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .header-block {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .special-button.modified {
+        margin: 0px auto;
+    }
+
+    .header-text {
+        margin: 0px;
+    }
+
+    .header-text h3 {
+        margin: 20px 0px;
+        line-height: 70px;
+        text-align: center;  
+    } 
+
+    .hashlink {
+        margin: 5px auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .header-text h3 {
+            font-size: 50px;
+    }
+    .header-block {
+        padding: 20px 10px;
+    }
+
+}
+
+
+
+@keyframes  girl{
+    0%{
+        ransform: scale(1);
+    }
+
+    50%{
+    transform: scale(1.03) translateY(-5px);    
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}

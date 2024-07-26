@@ -1,0 +1,38 @@
+.sponsors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    background-color: #ebd96b;
+    padding: 40px 0px;
+    margin-bottom: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template: 1fr / repeat(6, minmax(auto, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 1060px) {
+    .grid-container {
+        grid-template: repeat(2, 1fr) / repeat(3, minmax(auto, 1fr));
+
+    }
+}
+
+@media (max-width: 690px) {
+    .grid-container {
+        grid-template: repeat(3, 1fr) / repeat(2, minmax(auto, 1fr));
+
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template: repeat(6, 1fr) / repeat(1, minmax(auto, 1fr));
+
+    }
+}
