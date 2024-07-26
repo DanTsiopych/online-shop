@@ -16,9 +16,6 @@
   "predeploy": "npm run build",
  
    
-  "deploy": "gp-pages -d build",
- 
-   
   "dev": "vite",
  
    

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import './styled.css';
 import { Context } from '../Context';
-import { useLocalStorage } from '../../hooks/useLocalStorage';
+import { useLocalStorage } from '../useLocalStorage';
 
 const Cart = () => {
     const value = useContext(Context)
@@ -46,7 +46,7 @@ const Cart = () => {
                                     })
                                 }
                                 }
-                            
+
 
 
                                 className='good-counter'

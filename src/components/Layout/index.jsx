@@ -3,7 +3,7 @@ import './styled.css';
 import Nav from "../Nav";
 import { Outlet } from 'react-router-dom';
 import { Context } from '../Context';
-import { useLocalStorage } from '../../hooks/useLocalStorage';
+import { useLocalStorage } from '../useLocalStorage';
 const Layout = () => {
     const [cart, setCart] = useLocalStorage('cart', []);
     return (
