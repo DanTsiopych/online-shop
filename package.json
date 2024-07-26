@@ -1,5 +1,6 @@
 {
-  "homepage": "https://dantsiopych.github.io/online-shop/",
+  "predeploy": "npm run build",
+  "homepage": "https://dantsiopych.github.io/online-shop",
   "name": "shop-project",
   "private": true,
   "version": "0.0.0",
