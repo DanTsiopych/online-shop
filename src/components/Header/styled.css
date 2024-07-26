@@ -147,7 +147,7 @@
 
 @keyframes  girl{
     0%{
-        ransform: scale(1);
+        transform: scale(1);
     }
 
     50%{
